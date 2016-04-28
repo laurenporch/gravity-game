@@ -23,12 +23,17 @@ window.onload = function() {
     var menuKey;    // Assigns key 'm' so that it can be used
     var lastState;  // Holds string that indicates what the last state was
     
+    //Added by Luke
+    var layer;
+    var map;
+    
     // Add all of the states
     game.state.add('start', StartState);
     game.state.add('lose', LoseState);
     game.state.add('win', WinState);
     game.state.add('levelOne', LevelOneState);
     game.state.add('mainMenu', MainMenuState);
+    game.state.add('levelTwo', LevelTwoState);
     
     // Start the first state
     game.state.start('start');

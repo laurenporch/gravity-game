@@ -10,6 +10,11 @@ var StartState = {
         this.game.load.image('crate', 'assets/companion_cube.png');
         this.game.load.audio('jump', 'assets/jump.wav');
         this.game.load.image('arrowKeys', 'assets/arrowkeys.png');
+        
+        
+        //Loading done by Luke for Level 2 Map
+        this.game.load.tilemap('LevelTwoMap', 'assets/LevelTwoMap.json', null, Phaser.Tilemap.TILED_JSON);
+        this.game.load.image('tiles', 'assets/platform.png');
     },
     
     create: function () {
